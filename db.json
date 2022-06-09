@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "nombre": "URIEL SINUE VEJERO LEÓN",
+      "empresa": "PM&AI CAPITAL",
+      "email": "uriel_pbkl@hotmail.com",
+      "telefono": "5525161405",
+      "notas": "Trabaja bien",
+      "id": 1
+    },
+    {
+      "nombre": "ERICK GUERRERO",
+      "empresa": "CONDUSEF",
+      "email": "correo@hotmail.com",
+      "telefono": "5555555555",
+      "notas": "Es chido",
+      "id": 2
+    },
+    {
+      "nombre": "ALAN ZÚÑIGA",
+      "empresa": "PM&AI CAPITAL",
+      "email": "correo@hotmail.com",
+      "telefono": "5555555555",
+      "notas": "Es chido",
+      "id": 3
+    }
+  ]
+}
