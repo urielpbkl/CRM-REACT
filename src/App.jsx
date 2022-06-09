@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route path='/clientes' element={<Layout />}> {/* EL MASTER PAGE ES EL COMPONENTE "Layout.jsx" */}
+        <Route path='/' element={<Layout />}> {/* EL MASTER PAGE ES EL COMPONENTE "Layout.jsx" */}
           <Route index element={<Inicio />} /> {/*COMPONENTE QUE SE VA A CARGAR CUANDO SE VISITE LA "url" DE ARRIBA */}
           <Route path='nuevo' element={<NuevoCliente />} />
           <Route path='editar/:id' element={<EditarCliente />} />

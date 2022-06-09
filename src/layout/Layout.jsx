@@ -14,11 +14,11 @@ export const Layout = () => {
 
                 <nav className='mt-10'>
                     <Link
-                        className={`${urlActual === '/clientes' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`}/* SI ESTOY EN LA "url" DE ESTE LINK, QUE CAMBIE EL ESTILO, SINO QUE SE QUEDE CON EL ORIGINAL */
-                        to='/clientes'>Clientes</Link>
+                        className={`${urlActual === '/' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`}/* SI ESTOY EN LA "url" DE ESTE LINK, QUE CAMBIE EL ESTILO, SINO QUE SE QUEDE CON EL ORIGINAL */
+                        to='/'>Clientes</Link>
                     <Link
-                        className={`${urlActual === '/clientes/nuevo' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`} /* SI ESTOY EN LA "url" DE ESTE LINK, QUE CAMBIE EL ESTILO, SINO QUE SE QUEDE CON EL ORIGINAL */
-                        to='/clientes/nuevo'>Agregar Nuevo Cliente</Link>
+                        className={`${urlActual === '/nuevo' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`} /* SI ESTOY EN LA "url" DE ESTE LINK, QUE CAMBIE EL ESTILO, SINO QUE SE QUEDE CON EL ORIGINAL */
+                        to='/nuevo'>Agregar Nuevo Cliente</Link>
                 </nav>
             </div>
 

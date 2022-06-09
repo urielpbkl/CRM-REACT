@@ -8,7 +8,7 @@ export const Inicio = () => {
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
-        const url = `${import.meta.env.VITE_API_URL}/clientes-view/`
+        const url = `${import.meta.env.VITE_API_URL}/clientes/clientes-view/`
         const respuesta = await fetch(url) //NO PONEMOS EL MÉTODO PORQUE "fetch" POR DEFECTO YA TRAE EL MÉTODO "GET"
         const resultado = await respuesta.json()//CREAMOS UN "JSON" QUE CONTENGA TODOS LOS REGISTROS QUE TENEMOS EN LA BD
         setClientes(resultado) //GUARDAMOS TODOS LOS REGISTROS EN EL OBJETO "clientes"
@@ -25,7 +25,7 @@ export const Inicio = () => {
 
     if (confirmar) {
       try {
-        const url = `${import.meta.env.VITE_API_URL}clientes-detalle/${id}` //SELECCIONAMOS CLIENTE POR SU "id"
+        const url = `${import.meta.env.VITE_API_URL}/clientes/clientes-detalle/${id}` //SELECCIONAMOS CLIENTE POR SU "id"
         const respuesta = await fetch(url, {
           method: 'DELETE'
         }) //NO PONEMOS EL MÉTODO PORQUE "fetch" POR DEFECTO YA TRAE EL MÉTODO "GET"

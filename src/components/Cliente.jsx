@@ -18,12 +18,12 @@ export const Cliente = ({ cliente, handleEliminar }) => {
                 <button
                     type='button'
                     className='bg-teal-500 hover:bg-teal-600 block w-full text-white p-2 uppercase font-bold text-xs rounded-md'
-                    onClick={() => navigate(`/clientes/${id}`)}
+                    onClick={() => navigate(`${id}`)}
                 >Ver</button>
                 <button
                     type='button'
                     className='bg-blue-600 hover:bg-blue-700 block w-full text-white p-2 uppercase font-bold text-xs rounded-md mt-3'
-                    onClick={() => navigate(`/clientes/editar/${id}`)}
+                    onClick={() => navigate(`/editar/${id}`)}
                 >Editar</button>
                 <button
                     type='button'

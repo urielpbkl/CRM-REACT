@@ -40,7 +40,7 @@ export const Formulario = ({ cliente, cargando }) => {
 
             if (cliente.id) {
                 //-----------------------------EDITAR REGISTRO------------------------------------
-                const url = `${import.meta.env.VITE_API_URL}/clientes-detalle/${cliente.id}` //AGREGAMOS EL "endpoint" DE LA "api"
+                const url = `${import.meta.env.VITE_API_URL}/clientes/clientes-detalle/${cliente.id}` //AGREGAMOS EL "endpoint" DE LA "api"
 
                 respuesta = await fetch(url, {
                     method: 'PUT', //USAMOS EL MÉTODO "http" PUT
@@ -53,7 +53,7 @@ export const Formulario = ({ cliente, cargando }) => {
             } else {
                 //-----------------------------NUEVO REGISTRO------------------------------------
 
-                const url = `${import.meta.env.VITE_API_URL}/clientes-view/` //AGREGAMOS EL "endpoint" DE LA "api"
+                const url = `${import.meta.env.VITE_API_URL}/clientes/clientes-view/` //AGREGAMOS EL "endpoint" DE LA "api"
 
                 respuesta = await fetch(url, {
                     method: 'POST', //USAMOS EL MÉTODO "http" PUT
@@ -71,7 +71,7 @@ export const Formulario = ({ cliente, cargando }) => {
             }
 
             const resultado = await respuesta.json()
-            navigate('/clientes')
+            navigate('/')
 
         } catch (error) {
             console.log(error)

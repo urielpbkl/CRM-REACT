@@ -14,7 +14,7 @@ export const EditarCliente = () => {
 
     const obtenerDatosCliente = async () => {
       try {
-        const url = `${import.meta.env.VITE_API_URL}/clientes-detalle/${id}` //SELECCIONAMOS CLIENTE POR SU "id"
+        const url = `${import.meta.env.VITE_API_URL}/clientes/clientes-detalle/${id}` //SELECCIONAMOS CLIENTE POR SU "id"
         const respuesta = await fetch(url) //NO PONEMOS EL MÉTODO PORQUE "fetch" POR DEFECTO YA TRAE EL MÉTODO "GET"
         const resultado = await respuesta.json() //CREAMOS UN "JSON" QUE CONTENGA LOS DATOS DEL CLIENTE SELECCIONADO
 
